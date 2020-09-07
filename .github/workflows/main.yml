@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: 14 
       - name: install build tools
-        run: sudo apt-get install build-essential
+        run: sudo apt-get install build-essential libx11-dev libxext-dev libxrender-dev libxrandr-dev libxtst-dev libxt-dev
       - name: configure
         run: bash configure
       - name: Run make
