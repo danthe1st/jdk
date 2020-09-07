@@ -9,6 +9,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1.4.2
+        with:
+          java-version: 14 
       - name: configure
         run: bash configure
       - name: Run make
